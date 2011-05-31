@@ -1,0 +1,35 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3610
+
+
+INTRODUCTION
+
+This plugin provides the operator versions
+of *, g*, #, g#. star is * (:help star).
+
+No default keymappings, so please map to
+your favorite keymappings like the followings:
+
+    nmap <Leader>*  <Plug>(operator-*)
+    nmap <Leader>g* <Plug>(operator-g*)
+    nmap <Leader>#  <Plug>(operator-#)
+    nmap <Leader>g# <Plug>(operator-g#)
+
+
+This plugin has two dependency plugins.
+
+- visualstar (vimscript#2944)
+- operator-user (vimscript#2692)
+
+
+USAGE EXAMPLE
+
+- <Leader>*iw or viw<Leader>* is the same as *. it's no use in this case :(
+- <Leader>*<Leader>* to search the same line as the cursor line.
+- <Leader>*iW to search the WORD under the cursor.
+- or you can even combine with another useful text-object plugins like these:
+http://www.google.com/cse?cx=partner-pub-3005259998294962%3Abvyni59kjr1&ie=ISO-8859-1&q=textobj&sa=Search&siteurl=www.vim.org%2F
+
+* is almost the same as /<C-r>=expand('<cword>')<CR> .
+/ is very handy moving command.
+* is also handy shortcut for / command.
+operator-star strongly helps you to move around quickly in the source code, text, etc.
